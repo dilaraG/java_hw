@@ -14,7 +14,7 @@ public class Main {
         List<Employee> employees = new ArrayList<>();
 
         try {
-            FileInputStream fis = new FileInputStream(new File("/Users/dilyaragazizova/Desktop/ИТМО/Java/homework/test_table.xlsx"));
+            FileInputStream fis = new FileInputStream(new File("test_table.xlsx"));
             Workbook workbook = new XSSFWorkbook(fis);
             Sheet sheet = workbook.getSheetAt(0);
             DataFormatter dataFormatter = new DataFormatter();
